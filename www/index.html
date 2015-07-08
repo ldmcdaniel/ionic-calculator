@@ -30,11 +30,8 @@
         <h1 class="title">Ionic Blank Starter</h1>
       </ion-header-bar>
       <ion-content>
-        <div class="row">{{display}}</div>
+        <div class="row display">{{display}}</div>
         <div class="button-bar">
-          <button class="button button-stabled">
-            x<sup>2</sup>
-          </button>
           <button class="button button-positive">
             sin
           </button>
@@ -44,12 +41,11 @@
           <button class="button button-positive">
             tan
           </button>
-          </div>
+          <button class="button button-stabled" ng-click="squared()">
+            x<sup>2</sup>
+          </button>
         </div>
         <div class="button-bar">
-          <button class="button button-stabled">
-            √
-          </button>
           <button class="button button-energized">
             sin <sup>-1</sup>
           </button>
@@ -59,46 +55,49 @@
           <button class="button button-energized">
             tan <sup>-1</sup>
           </button>
+          <button class="button button-stabled">
+            √
+          </button>
         </div>
         <div class="button-bar">
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(1)">
             1
           </button>
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(2)">
             2
           </button>
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(3)">
             3
           </button>
-          <button class="button button-stabled">
+          <button class="button button-stabled" ng-click="divide()">
             ÷
           </button>
         </div>
         <div class="button-bar">
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(4)">
             4
           </button>
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(5)">
             5
           </button>
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(6)">
             6
           </button>
-          <button class="button button-stabled">
+          <button class="button button-stabled" ng-click="multiply()">
             ×
           </button>
         </div>
         <div class="button-bar">
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(7)">
             7
           </button>
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(8)">
             8
           </button>
-          <button class="button button-light">
+          <button class="button button-light" ng-click="numbers(9)">
             9
           </button>
-          <button class="button button-stabled">
+          <button class="button button-stabled" ng-click="add()">
             +
           </button>
         </div>
@@ -106,21 +105,21 @@
             <button class="button button-light">
 
             </button>
-            <button class="button button-light">
+            <button class="button button-light" ng-click="numbers(0)">
               0
             </button>
             <button class="button button-light">
               .
             </button>
-            <button class="button button-stabled">
+            <button class="button button-stabled" ng-click="subtract()">
               -
             </button>
         </div>
         <div class="button-bar">
-          <button class="button button-assertive">
+          <button class="button button-assertive" ng-click="clear()">
             clear
           </button>
-          <button class="button button-balanced">
+          <button class="button button-balanced" ng-click="equals()">
             =
           </button>
           </div>
