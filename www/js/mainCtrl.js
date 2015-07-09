@@ -2,40 +2,35 @@ angular.module('starter')
 .controller('MainCtrl', ['$scope', function($scope){
   $scope.message = 'hello';
   $scope.display = 0;
-
+  var operator = 0;
   var arr = [];
-  var addTotal = 0;
-  var subtractTotal = 0;
-  var multiplyTotal = 0;
-  var divideTotal = 0;
+  var operand = 0;
 
   $scope.numbers = function (x) {
     arr.push(x);
     $scope.display = arr.join('') * 1;
   }
+  $scope.operation = function (x) {
+    operand = $scope.display;
+    arr = [];
+    operator = x;
+  }
 
-  $scope.add = function () {
-    addTotal = $scope.display;
-    arr = [];
-  }
-  $scope.subtract = function () {
-    subtractTotal = $scope.display;
-    arr = [];
-  }
-  $scope.multiply = function () {
-    multiplyTotal = $scope.display
-  }
-  $scope.divide = function () {
-    divideTotal = $scope.display;
-  }
   $scope.clear = function () {
     $scope.display = 0;
-    addTotal = 0;
+    operand = 0;
     arr = [];
   }
-
   $scope.equals = function () {
-    $scope.display += addTotal;
+    if (operator === 1) {
+      $scope.display += operand;
+    } else if (operator === 2) {
+      $scope.display = operand - $scope.display;
+    } else if (operator === 3) {
+      $scope.display *= operand;
+    } else if (operator === 4) {
+      $scope.display = operand / $scope.display;
+    }
   }
 
   $scope.squared = function () {
