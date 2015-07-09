@@ -32,13 +32,13 @@
       <ion-content>
         <div class="row display">{{display}}</div>
         <div class="button-bar">
-          <button class="button button-positive">
+          <button class="button button-positive" ng-click="sine()">
             sin
           </button>
-          <button class="button button-positive">
+          <button class="button button-positive" ng-click="cosine()">
             cos
           </button>
-          <button class="button button-positive">
+          <button class="button button-positive" ng-click="tangent()">
             tan
           </button>
           <button class="button button-stabled" ng-click="squared()">
@@ -46,16 +46,16 @@
           </button>
         </div>
         <div class="button-bar">
-          <button class="button button-energized">
+          <button class="button button-energized" ng-click="arcsine()">
             sin <sup>-1</sup>
           </button>
-          <button class="button button-energized">
+          <button class="button button-energized" ng-click="arccosine()">
             cos <sup>-1</sup>
           </button>
-          <button class="button button-energized">
+          <button class="button button-energized" ng-click="arctangent()">
             tan <sup>-1</sup>
           </button>
-          <button class="button button-stabled">
+          <button class="button button-stabled" ng-click="squareRoot()">
             √
           </button>
         </div>
@@ -102,13 +102,13 @@
           </button>
         </div>
         <div class="button-bar">
-            <button class="button button-light">
-
-            </button>
             <button class="button button-light" ng-click="numbers(0)">
               0
             </button>
             <button class="button button-light">
+
+            </button>
+            <button class="button button-light" ng-click="numbers('.')">
               .
             </button>
             <button class="button button-stabled" ng-click="subtract()">
