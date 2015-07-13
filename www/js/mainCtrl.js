@@ -3,23 +3,23 @@ angular.module('starter')
   $scope.message = 'hello';
   $scope.display = 0;
   var operator = 0;
-  var arr = [];
+  var memory = [];
   var operand = 0;
 
   $scope.numbers = function (x) {
-    arr.push(x);
-    $scope.display = arr.join('') * 1;
+    memory.push(x);
+    $scope.display = memory.join('') * 1;
   }
   $scope.operation = function (x) {
     operand = $scope.display;
-    arr = [];
+    memory = [];
     operator = x;
   }
 
   $scope.clear = function () {
     $scope.display = 0;
     operand = 0;
-    arr = [];
+    memory = [];
   }
   $scope.equals = function () {
     if (operator === 1) {
@@ -39,7 +39,6 @@ angular.module('starter')
   $scope.squareRoot = function () {
     $scope.display = Math.sqrt($scope.display);
   }
-
 
   $scope.sine = function () {
     $scope.display = Math.sin($scope.display);
