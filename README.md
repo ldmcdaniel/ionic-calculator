@@ -41,7 +41,7 @@ Ionic, HTML5, CSS3, AngularJS, GitHub, and Gulp.
 
 >http://ionicframework.com/docs/guide/installation.html
 
-*After install Ionic, from terminal:*
+*After installing Ionic, from terminal:*
 
 ````ionic serve````
 
