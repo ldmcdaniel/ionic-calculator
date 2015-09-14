@@ -37,7 +37,7 @@ Ionic, HTML5, CSS3, AngularJS, GitHub, and Gulp.
 
 ````bower install````
 
-*Install ionic with direction from here:*
+*Install ionic with the directions found here:*
 
 >http://ionicframework.com/docs/guide/installation.html
 
